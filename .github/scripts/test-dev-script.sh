@@ -33,7 +33,7 @@ echo ""
 
 # Test 4: All commands are recognized
 echo "✓ Test 4: Command recognition"
-commands=("env" "e" "new" "n" "login" "l" "docker" "dk" "ec2" "ec" "init" "i" "up" "u" "down" "d" "build" "b" "push" "p" "deploy" "y" "logs" "lg" "ssh" "s" "clean" "c" "nuke" "x" "help" "h")
+commands=("env" "e" "new" "n" "login" "l" "docker" "dk" "ec2" "ec" "init" "i" "up" "u" "down" "d" "build" "b" "push" "p" "deploy" "y" "logs" "lg" "web" "w" "ssh" "s" "clean" "c" "nuke" "x" "help" "h")
 for cmd in "${commands[@]}"; do
   if echo "$help_output" | grep -q "$cmd"; then
     echo "  ✓ Command '$cmd' listed in help"

@@ -121,6 +121,11 @@ cmd_logs() {
   ssh -i "${HOME}/.ssh/${EC2_KEY_NAME}" "ubuntu@${EC2_DEPLOY_HOST}" "cd ${EC2_DEPLOY_DIR} && docker compose logs -f"
 }
 
+cmd_web() {
+  load_env
+  echo "http://${EC2_DEPLOY_HOST}"
+}
+
 cmd_clean() {
   rm -rf ./data/
   (cd app && npm run clean)
@@ -178,6 +183,7 @@ cmd_help() {
   echo "  build [b]   - Build Docker images without cache"
 
   echo "EC2 commands:"
+  echo "  web [w]     - Print EC2 web address"
   echo "  ssh [s]     - SSH into the EC2 instance"
   echo "  logs [lg]   - Tail service logs on EC2"
   echo "  ec2 [ec]    - Verify EC2 SSH connectivity and env vars"
@@ -323,6 +329,7 @@ main() {
       ec2|ec) cmd_ec2 ;;
       deploy|y) cmd_deploy ;;
       logs|lg) cmd_logs ;;
+      web|w) cmd_web ;;
       clean|c) cmd_clean ;;
       nuke|x) cmd_nuke ;;
       help|h) cmd_help ;;
