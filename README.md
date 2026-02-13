@@ -19,5 +19,5 @@ Optional validation commands:
 
 ## Documentation
 
-Project documentation is available in the [`docs`](docs) directory, covering
+Project documentation is available in the [`docs`](docs/README.md) directory, covering
 development, deployment, and configuration topics in detail.
