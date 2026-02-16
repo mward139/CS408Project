@@ -20,4 +20,4 @@ Optional validation commands:
 ## Documentation
 
 Project documentation is available in the [`docs`](docs) directory, covering
-development, deployment, and configuration topics in detail.
+development, deployment, and configuration topics in detail
