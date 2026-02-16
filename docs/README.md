@@ -23,9 +23,9 @@ configuring, and deploying the application on an AWS EC2 instance.
     - Unit Testing: [Jest](https://jestjs.io/)
     - Integration Testing: [Supertest](https://www.npmjs.com/package/supertest)
 - Tools:
-      - Container: [Docker](https://www.docker.com/)
-      - CI/CD: [GitHub Actions](https://github.com/features/actions)
-      - Code Quality: [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
+    - Container: [Docker](https://www.docker.com/)
+    - CI/CD: [GitHub Actions](https://github.com/features/actions)
+    - Code Quality: [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
  
 ## Team Workflow
 
