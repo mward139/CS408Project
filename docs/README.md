@@ -11,16 +11,22 @@ configuring, and deploying the application on an AWS EC2 instance.
 ## Technology Stack
 
 - Backend technology stack
-    - Web Server: [nginx](https://www.nginx.com/) as a reverse proxy server
+    - Web Server: [nginx](https://www.nginx.com/) as a reverse proxy server for future deployment
     - Backend Runtime: [Node.js](https://nodejs.org/)
     - Backend Framework: [Express](https://expressjs.com/)
-    - Database: [SQLite](https://www.sqlite.org/index.html) for lightweight data storage
+    - Database: [PostgreSQL](https://www.postgresql.org/) for data storage (planned)
 - Frontend technology stack
-    - Templates: [EJS](https://ejs.co/) for server-side rendering
-    - UX/UI: [Bootstrap](https://getbootstrap.com/) for responsive design
+    - Templates: [EJS](https://ejs.co/) for server-side rendering (planned)
+    - UX/UI: [Bootstrap](https://getbootstrap.com/) for responsive design (planned)
+    - Client-Side Interactivity: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (planned)
 - Testing Frameworks
-    - End-to-End Testing: [Playwright](https://playwright.dev/)
+    - Unit Testing: [Jest](https://jestjs.io/)
+    - Integration Testing: [Supertest](https://www.npmjs.com/package/supertest)
+- Tools:
+      - Container: [Docker](https://www.docker.com/)
+      - CI/CD: [GitHub Actions](https://github.com/features/actions)
+      - Code Quality: [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
  
 ## Team Workflow
 
-- Detail your teams workflow here.
+- Solo developer
